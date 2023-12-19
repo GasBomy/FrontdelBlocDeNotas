@@ -1,0 +1,173 @@
+.header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100vw;
+	height: 5rem;
+	background: #0c38b3;
+	padding: 1rem;
+	/* position: fixed; */
+	
+}
+.headerLogo a{
+	color: #f5f6f7;
+	text-decoration: none;
+}
+.headerLogo img{
+	height: 6rem;
+	width: 6rem;
+}
+
+.headerSearch{
+	width: 15rem;
+	height: 2.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.headerSearch input{
+	width: 100%;
+	height: 100%;
+	border-radius: 3rem;
+	background: #12121245;
+	border: 1px solid #0c38b3;
+	color: #f5f6f7;
+	/* padding: .5rem; */
+	padding-right: 1rem;
+}
+
+::placeholder{
+	/* color: #12121245; */
+	position: relative;
+	left: .5rem;
+}
+
+.headerSearch span{
+	position: absolute;
+	height: 1.2rem;
+	width: 1.2rem;
+	right: .6rem;
+}
+
+.headerSearch span img{
+	height: 1.2rem;
+	width: 1.2rem;
+}
+
+.headerHamburguesa{
+	display: none;
+	width: 1.7rem;
+	height: 1.7rem;
+	/* background: #141414; */
+	border: 1px solid white;
+	border-radius: 2px;
+}
+
+.headerHamburguesa img{
+	color: red;
+}
+.headerHamburguesa:active{
+	background: cyan;
+}
+
+.headerUl{
+	display: flex;
+	align-items: center;
+	gap: 1rem;	
+}
+
+.ul2{
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 3rem;
+	right: 0;
+	background: #141414;
+	width: 15rem;
+	height: 22rem;
+	/* z-index:50; */
+	gap: 1.2rem;
+
+}
+.ul2 li{
+	height: 2.5rem;
+}
+.ul2 li a{
+	color: white;
+}
+
+.headerUl li {
+	list-style: none;
+}
+
+.headerUl li a{
+	color: #f5f6f7;
+	text-decoration: none;
+}
+
+
+@media screen and (max-width:800px) {
+	
+	.headerUl{
+		/* display: none; */
+		display: flex;
+		width: 10rem;
+		justify-content: center;
+		align-items: center;
+		flex-flow: column nowrap;
+		background: var(--bg-color2);
+		border: .125rem solid #0c38b3;
+		border-radius: .625rem;
+		opacity: -5;
+	    top: 0; 
+		right: 0;
+		height:0;
+		overflow: hidden;
+		transition: all .4s ease;
+		position: absolute;
+		margin-top: 5rem;
+		background: #222;	
+	}
+	.headerUl li{
+		width: 100%;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+
+	.ul2{
+		display: flex;
+	}
+
+	.headerHamburguesa{
+		display: block;
+	}
+
+	.isActive{
+		/* display: flex; */
+		top: 0;
+		opacity: 1;
+		height: 10rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		z-index: 999;
+	}
+
+	.headerHamburguesa{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+}
+
+@media screen and (max-width:500px){
+	.headerSearch{
+		display: none;
+	}
+}

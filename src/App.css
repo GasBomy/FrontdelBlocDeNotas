@@ -1,0 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body{
+  display: flex;
+  flex-flow: column;
+  font-size: 1em;
+  background-color:#f5f6f7 ;
+  background: #222;
+  /* background: #060660; */
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  color: #f5f6f7;
+  /* background-image: url('../src/images/imagendefondo.jpg');
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat; */
+  height: 100vh;
+
+}
+

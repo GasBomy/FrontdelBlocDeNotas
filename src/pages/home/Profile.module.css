@@ -1,0 +1,181 @@
+.contenedorh1{
+    width: 100%; 
+    height: 2rem;
+    color: #f5f6f7;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: machine 4s steps(30);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .h1{
+    font-size: 1.5rem;
+} */
+/* .principal{
+    padding: 1.5rem;
+    width: 37.5rem;
+    height: 31.25rem;
+    margin: 50px auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+} */
+/* .cajaTexto{
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 500px;
+    overflow-wrap: inherit;
+    
+} */
+@keyframes machine {
+    from{ width: 0;}
+    to {width: 100%;}
+}
+
+/* .parrafo1{
+    width: 100%;
+    font-size: 1.8em;
+    animation: machine2 4s steps(50);
+    overflow: hidden;
+    white-space: nowrap;
+    
+} */
+/* .parrafo2{
+    width: 100%;
+    font-size: 1.8em;
+    animation: machine3 4s steps(50);
+    overflow: hidden;
+    white-space: nowrap;
+} */
+/* @keyframes machine2 {
+    from{ width: 0;}
+    to {width: 100%;}
+}
+@keyframes machine3 {
+    from{ width: 0;}
+    to {width: 100%;}
+}
+.contenedorImg{
+    border: 4px solid #0c38b3;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+}
+
+.contenedorImg img{
+    width: 100%;
+    height: 100%;
+} */
+
+
+
+/* ============================================================================== */
+
+.principal{
+	width: 25rem;
+	height: 30rem;
+	background: linear-gradient( to bottom, darkblue 0%, black 100%);
+	/* margin-top: 1rem; */
+	position: relative;
+	aspect-ratio: 10/16;
+	border-radius: 10px;
+	padding: 5px;
+    margin: 50px auto;
+}
+
+.cajaStyle{
+	background: #161616;
+	border-radius: 10px;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-flow: column;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+.divImg{
+	
+	width: 100%;
+	height: 10rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: darkblue;
+	border-radius: 10px 10px 0px 0px ;
+}
+
+.imagen{
+	border: 1px solid #0c38b3;
+	background: #222;
+	height: 8rem;
+	width: 8rem;
+	border-radius: 500px;
+	aspect-ratio: 1/1;
+	overflow: hidden;
+	position: relative;
+	top: 4rem;
+
+}
+
+.divH{
+	/* border: 2px solid #0c38b3; */
+	width: 100%;
+	height: 6.5rem;
+	padding: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
+    padding-top: 3rem;
+    margin-top: 3rem;
+}
+
+.parrafo1{
+    width: 100%;
+    font-size: 1.2em;
+    animation: machine2 4s steps(50);
+    /* overflow: hidden; */
+    white-space: nowrap;
+    text-align: center;
+    
+}
+.parrafo2{
+    width: 100%;
+    font-size: 1.2em;
+    animation: machine3 4s steps(50);
+    /* overflow: hidden; */
+    white-space: nowrap;
+    text-align: center;
+}
+.h1{
+    font-size: 1.1rem;
+}
+.hour{
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width:450px){
+    .principal{
+        height: 25rem;
+        width: 19.5rem;
+    }
+    .contenedorh1{
+        width: 100%;
+    }
+    .h1{
+        font-size: .9em;
+    }
+
+}

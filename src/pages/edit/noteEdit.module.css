@@ -1,0 +1,150 @@
+/* *{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	width: 100%;
+	height: 100vh;
+	margin-top: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: orange;
+} */
+
+.principal{
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding: 1rem;
+	width: 80%;
+	height: 90%;
+	border: 2px solid #0c38b3; 
+	gap: 1rem;
+	background: #121212;
+	border-radius: 6px;
+    margin: 50px auto;
+}
+.contenido{
+	height:100%;
+	width: 100%;
+	/*border: 2px solid red;*/
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	overflow: hidden;
+}
+.empa{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	gap: .5rem;
+	flex-flow: column;
+}
+.pam1{	
+	height: 12%;
+	width: 100%;
+	/*border: 2px solid orange;*/
+}
+.pam1 input{
+    color: #f5f6f7;
+	height: 100%;
+	width: 100%;
+	font-size: 1.5rem;
+	padding: 5px;
+	border-radius: 4px;
+	border: 2px solid #0c38b3;
+	background: rgba(0, 0, 0, .1);
+}
+
+.pam2{
+	height: 88%;
+	width: 100%;
+	/*border: 2px solid orange;*/
+}
+
+.pam2 textarea{
+    color: #f5f6f7;
+	height: 100%;
+	width: 100%;
+	resize: none;
+	font-size: 1.5rem;
+	padding: 5px;
+	border-radius: 4px;
+	border: 2px solid #0c38b3;
+	background: rgba(0, 0, 0, .1);
+}
+
+.botones{
+	width: 100%;
+	display: flex;
+	gap: 2rem;
+}
+/* =============================== */
+
+
+.button{
+	color: #f5f6f7;
+	border: none;
+	background: #0c38b3;
+	border: none;
+	padding: 5px;
+	height: 2.2rem;
+	width: 7rem;
+	font-size: 1.1em;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	transition: .5s;
+	border: 2px solid #f5f6f7;
+	border-radius: 2px;
+}
+.button::before{
+	content: '';
+	background: blue;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: .5s;
+	text-emphasis-position: 0;
+	z-index: -1;
+}
+
+.button:hover{
+	/*color: #121212;*/
+	/*background: #036564;*/
+	border-radius: 5px;
+}
+.button:hover::before{
+	width: 100%;
+}
+.button:active{
+	/*color: #036564;*/
+	background: transparent;
+}
+.button:active::before{
+	background: #036564;
+}
+
+
+@media screen and (max-width:600px){
+	.principal{
+		height: 25rem;
+	}
+	.pam1 input{
+		font-size: .8em;
+	}
+	.pam2 textarea{
+		font-size: .8em;
+	}
+	.botones{
+		gap: .5rem;
+	}
+}
