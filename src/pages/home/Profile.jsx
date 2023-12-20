@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import style from './Profile.module.css'
-import imagenUser from '../../images/cabeza.jpeg'
+import imagenUser from '../../images/pinguino.jpeg'
 
 const Profile = () => {
     const [userData, setUserData] = useState(null);
